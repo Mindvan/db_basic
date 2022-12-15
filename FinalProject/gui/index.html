@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+   <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<!-- database - countries
+Main table - вывод из таблицы country всех существующих сток
+Add continent - добавление нового континента, записывается в таблицу continent
+Add religion - добавление новой религии, записывается в таблицу religion
+Add language - добавление нового языка, записывается в таблицу language
+Add country - добавление новую страну с указанием её названия, континента, религии, 
+и языка, записывается в таблицу country -->
+
+<body onload="upload()">
+  <div class="container">
+    <div class="title">Countries Data</div>
+    <div class="table-options">
+      <div class="table-options-title">
+        Add data
+      </div>
+      <ul class="table-options-list">
+        <li class="table-options-item" id="add-0">Main table</li>
+        <li class="table-options-item" id="add-1">Add country</li>
+        <li class="table-options-item" id="add-2">Add continent</li>
+        <li class="table-options-item" id="add-3">Add religion</li>
+        <li class="table-options-item" id="add-4">Add language</li>
+      </ul>
+    </div>
+    <table class="table-main">
+      <tbody>
+      <tr>
+          <th>ID</th>
+          <th>Country</th>
+          <th>Continent</th>
+          <th>Religion</th>
+          <th>Language</th>
+          <th>Population</th>
+          <th>Options</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Russia</td>
+        <td>Eurasia</td>
+        <td>Ortodox</td>
+        <td>Russian</td>
+        <td>666</td>
+        <td class="options">
+            <div class="edit">
+                Edit
+            </div>
+            <div class="delete">
+                Delete
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Ukraine</td>
+        <td>Eurasia</td>
+        <td>Ortodox</td>
+        <td>Ukrainian</td>
+        <td>521</td>
+        <td class="options">
+            <div class="edit">
+                Edit
+            </div>
+            <div class="delete">
+                Delete
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Belarus</td>
+        <td>Eurasia</td>
+        <td>Ortodox</td>
+        <td>Russian</td>
+        <td>357</td>
+        <td class="options">
+            <div class="edit">
+                Edit
+            </div>
+            <div class="delete">
+                Delete
+            </div>
+        </td>
+    </tr>
+      </tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
